@@ -1,0 +1,14 @@
+## YAML Templatesss
+---
+default: -p pretty -p json -p no_headless -p prod
+
+pretty: --format pretty
+ci:  --format progress
+
+html:  --format html --out=results/report.html
+json:  --format json --out=results/report.json
+
+prod:  ENVIRONMENT_TYPE=prod
+
+headless:  HEADLESS=headless
+no_headless:  HEADLESS=no_headless
